@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_HelloWorld));
             this.Btn_Sair = new System.Windows.Forms.Button();
             this.Btn_ModificaLabel = new System.Windows.Forms.Button();
             this.lbl_Titulo = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@
             this.Controls.Add(this.Btn_ModificaLabel);
             this.Controls.Add(this.Btn_Sair);
             this.Font = new System.Drawing.Font("Arial", 10F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_HelloWorld";
             this.Text = "Hello World";
