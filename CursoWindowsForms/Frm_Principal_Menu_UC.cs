@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CursoWindowsFormsBiblioteca;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,15 @@ namespace CursoWindowsForms
         int controleValidaCPF = 0;
         int controleValidaCPF2 = 0;
         int controleValidaSenha = 0;
+        int controleArquivoImagem = 0;
         public Frm_Principal_Menu_UC()
         {
             InitializeComponent();
+
+            novoToolStripMenuItem.Enabled = false;
+            apagarAbaToolStripMenuItem.Enabled = false;
+            abrirImagemToolStripMenuItem.Enabled = false;
+            desconectarToolStripMenuItem.Enabled = false;
         }
         private void demonstracaoKeyToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -113,6 +120,76 @@ namespace CursoWindowsForms
             {
                 Tbc_Aplicacoes.TabPages.Remove(Tbc_Aplicacoes.SelectedTab);
             }
+        }
+
+        private void abrirImagemToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            OpenFileDialog dialogBox = new OpenFileDialog();
+            dialogBox.InitialDirectory = "C:\\Users\\gsnogueira\\source\\repos\\CursoWindowsForms\\CursoWindowsForms\\Imagens";
+            dialogBox.Filter = "PNG|*.PNG";
+            dialogBox.Title = "Escolha a Imagem";
+
+            if(dialogBox.ShowDialog() == DialogResult.OK)
+            {
+
+                string nomeArquivoImagem = dialogBox.FileName;
+                
+
+                controleArquivoImagem += 1;
+                Frm_ArquivoImagem_UC U = new Frm_ArquivoImagem_UC(nomeArquivoImagem);
+                TabPage TB = new TabPage();
+                U.Dock = DockStyle.Fill;
+                TB.Name = "Arquivo Imagem " + controleArquivoImagem;
+                TB.Text = "Arquivo Imagem " + controleArquivoImagem;
+                TB.ImageIndex = 6;
+                TB.Controls.Add(U);
+                Tbc_Aplicacoes.TabPages.Add(TB);
+            }
+
+            
+        }
+
+        private void conectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Login login = new Frm_Login();
+            login.ShowDialog();
+
+            if(login.DialogResult == DialogResult.OK)
+            {
+                string senha = login.senha;
+                string usuario = login.login;
+
+                if(Cls_Uteis.validaSenhaLogin(senha) == true)
+                {
+                    novoToolStripMenuItem.Enabled = true;
+                    apagarAbaToolStripMenuItem.Enabled = true;
+                    abrirImagemToolStripMenuItem.Enabled = true;
+                    desconectarToolStripMenuItem.Enabled = true;
+                    conectarToolStripMenuItem.Enabled = false;
+
+                    MessageBox.Show($"Bem-Vindo {usuario}!", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Senha incorreta.", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    conectarToolStripMenuItem_Click(sender, e);
+                }
+            }
+        }
+
+        private void desconectarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            novoToolStripMenuItem.Enabled = false;
+            apagarAbaToolStripMenuItem.Enabled = false;
+            abrirImagemToolStripMenuItem.Enabled = false;
+            desconectarToolStripMenuItem.Enabled = false;
+            conectarToolStripMenuItem.Enabled = true;
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
