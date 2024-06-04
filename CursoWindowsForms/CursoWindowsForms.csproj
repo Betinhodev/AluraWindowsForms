@@ -86,6 +86,12 @@
     <Compile Include="Formulários Curso 1\Frm_Mascara.Designer.cs">
       <DependentUpon>Frm_Mascara.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_ArquivoImagem_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frm_ArquivoImagem_UC.Designer.cs">
+      <DependentUpon>Frm_ArquivoImagem_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_DemonstracaoKey_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="Frm_HelloWorld_UC.Designer.cs">
       <DependentUpon>Frm_HelloWorld_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Mascara_UC.cs">
       <SubType>UserControl</SubType>
@@ -146,6 +158,12 @@
     <Compile Include="Frm_Principal_Menu_UC.Designer.cs">
       <DependentUpon>Frm_Principal_Menu_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Questao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Questao.Designer.cs">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_ValidaCPF2_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -175,11 +193,17 @@
     <EmbeddedResource Include="Formulários Curso 1\Frm_Mascara.resx">
       <DependentUpon>Frm_Mascara.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ArquivoImagem_UC.resx">
+      <DependentUpon>Frm_ArquivoImagem_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frm_DemonstracaoKey_UC.resx">
       <DependentUpon>Frm_DemonstracaoKey_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_HelloWorld_UC.resx">
       <DependentUpon>Frm_HelloWorld_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Mascara_UC.resx">
       <DependentUpon>Frm_Mascara_UC.cs</DependentUpon>
@@ -204,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Principal_Menu_UC.resx">
       <DependentUpon>Frm_Principal_Menu_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Questao.resx">
+      <DependentUpon>Frm_Questao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_ValidaCPF2_UC.resx">
       <DependentUpon>Frm_ValidaCPF2_UC.cs</DependentUpon>
@@ -239,6 +266,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Imagens\Frm_ArquivoImagem.ico" />
+    <Content Include="Imagens\Frm_Question.png" />
+    <Content Include="Imagens\Frm_ArquivoImagem.png" />
+    <Content Include="Imagens\Frm_Login.png" />
+    <None Include="Resources\Frm_Question.ico" />
     <None Include="Imagens\Frm_ValidaSenha.png" />
     <None Include="Imagens\Frm_ValidaSenha.ico" />
     <None Include="Imagens\Frm_ValidaCPF2.png" />

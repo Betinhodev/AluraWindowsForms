@@ -61,6 +61,26 @@ namespace CursoWindowsForms.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Frm_ArquivoImagem {
+            get {
+                object obj = ResourceManager.GetObject("Frm_ArquivoImagem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+        /// </summary>
+        internal static System.Drawing.Icon Frm_ArquivoImagem1 {
+            get {
+                object obj = ResourceManager.GetObject("Frm_ArquivoImagem1", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
         /// </summary>
         internal static System.Drawing.Icon Frm_DemonstracaoKey {
@@ -101,6 +121,16 @@ namespace CursoWindowsForms.Properties {
         }
         
         /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Frm_Login {
+            get {
+                object obj = ResourceManager.GetObject("Frm_Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
         /// </summary>
         internal static System.Drawing.Icon Frm_Mascara {
@@ -126,6 +156,26 @@ namespace CursoWindowsForms.Properties {
         internal static System.Drawing.Icon Frm_Principal {
             get {
                 object obj = ResourceManager.GetObject("Frm_Principal", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Frm_Question {
+            get {
+                object obj = ResourceManager.GetObject("Frm_Question", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Icon semelhante a (Ícone).
+        /// </summary>
+        internal static System.Drawing.Icon Frm_Question1 {
+            get {
+                object obj = ResourceManager.GetObject("Frm_Question1", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
