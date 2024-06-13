@@ -55,7 +55,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -116,10 +118,10 @@
     <Compile Include="Formulários Curso 2\Frm_Mascara_UC.Designer.cs">
       <DependentUpon>Frm_Mascara_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_CadastroCliente_UC.cs">
+    <Compile Include="Formulários Curso 3\Frm_CadastroCliente_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Frm_CadastroCliente_UC.Designer.cs">
+    <Compile Include="Formulários Curso 3\Frm_CadastroCliente_UC.Designer.cs">
       <DependentUpon>Frm_CadastroCliente_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulários Curso 3\Frm_MenuFlutuante.cs">
@@ -238,7 +240,7 @@
     <EmbeddedResource Include="Formulários Curso 2\Frm_Mascara_UC.resx">
       <DependentUpon>Frm_Mascara_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_CadastroCliente_UC.resx">
+    <EmbeddedResource Include="Formulários Curso 3\Frm_CadastroCliente_UC.resx">
       <DependentUpon>Frm_CadastroCliente_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulários Curso 3\Frm_MenuFlutuante.resx">
@@ -320,6 +322,8 @@
     <Content Include="Imagens\Frm_Login.png" />
     <Content Include="Imagens\DeleteAll.png" />
     <Content Include="Imagens\DeleteTab.png" />
+    <Content Include="Imagens\ApagarBarra.png" />
+    <Content Include="Imagens\LimparBarra.png" />
     <Content Include="Imagens\money.png" />
     <Content Include="Imagens\user.png" />
     <None Include="Resources\Frm_Question.ico" />

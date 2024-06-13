@@ -63,6 +63,16 @@ namespace CursoWindowsForms.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ApagarBarra {
+            get {
+                object obj = ResourceManager.GetObject("ApagarBarra", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cadastros {
             get {
                 object obj = ResourceManager.GetObject("Cadastros", resourceCulture);
@@ -286,6 +296,16 @@ namespace CursoWindowsForms.Properties {
         internal static System.Drawing.Bitmap Frm_ValidaSenha1 {
             get {
                 object obj = ResourceManager.GetObject("Frm_ValidaSenha1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LimparBarra {
+            get {
+                object obj = ResourceManager.GetObject("LimparBarra", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
